@@ -154,45 +154,22 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/audio.primary.montblanc.so:system/lib/hw/audio.primary.montblanc.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/audio_policy.montblanc.so:system/lib/hw/audio_policy.montblanc.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/audio.primary.montblanc.so:system/lib/hw/audio.primary.montblanc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
-    $(LOCAL_PATH)/proprietary/system/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libasound.so:system/lib/libasound.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libbassapp.so:system/lib/libbassapp.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libcspsa.so:system/lib/libcspsa.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libhalaudioprocessing.so:system/lib/libhalaudioprocessing.so \
-    $(LOCAL_PATH)/proprietary/system/lib/liblos.so:system/lib/liblos.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libmmprobe.so:system/lib/libmmprobe.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libnmf.so:system/lib/libnmf.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libnmfee.so:system/lib/libnmfee.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libnmftimer.so:system/lib/libnmftimer.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+    $(LOCAL_PATH)/proprietary/system/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
+    $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libhalaudioprocessing.so:system/lib/libhalaudioprocessing.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     $(LOCAL_PATH)/proprietary/system/lib/libspeech_proc_customer_plugin.so:system/lib/libspeech_proc_customer_plugin.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libspeech_processing.so:system/lib/libspeech_processing.so \
     $(LOCAL_PATH)/proprietary/system/lib/libste_adm.so:system/lib/libste_adm.so \
     $(LOCAL_PATH)/proprietary/system/lib/libste_audio_hwctrl.so:system/lib/libste_audio_hwctrl.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_audio_mixer.so:system/lib/ste_omxcomponents/libste_audio_mixer.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_audio_mixer.so:system/lib/libste_audio_mixer.so \
     $(LOCAL_PATH)/proprietary/system/lib/libste_ens_audio_common.so:system/lib/libste_ens_audio_common.so \
     $(LOCAL_PATH)/proprietary/system/lib/libste_ens_audio_samplerateconv.so:system/lib/libste_ens_audio_samplerateconv.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libste_ens_image_tuningdatabase.so:system/lib/libste_ens_image_tuningdatabase.so \
     $(LOCAL_PATH)/proprietary/system/lib/libste_ensloader.so:system/lib/libste_ensloader.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libste_ens_video_common.so:system/lib/libste_ens_video_common.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libste_ext_ens_image_common.so:system/lib/libste_ext_ens_image_common.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstelpcutils.so:system/lib/libstelpcutils.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libtee.so:system/lib/libtee.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libtrace.so:system/lib/libtrace.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_ste_aacdec.so:system/lib/libstagefright_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_ste_mp3decode.so:system/lib/libstagefright_ste_mp3decode.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_soft_ste_aacdec.so:system/lib/libstagefright_soft_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_soft_ste_mp3dec.so:system/lib/libstagefright_soft_ste_mp3dec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_ste_aacdec.so:system/lib/ste_omxcomponents/libstagefright_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_ste_mp3decode.so:system/lib/ste_omxcomponents/libstagefright_ste_mp3decode.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_soft_ste_aacdec.so:system/lib/ste_omxcomponents/libstagefright_soft_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefright_soft_ste_mp3dec.so:system/lib/ste_omxcomponents/libstagefright_soft_ste_mp3dec.so
+    $(LOCAL_PATH)/proprietary/system/lib/libste_audio_mixer.so:system/lib/libste_audio_mixer.so
 
 # LVVEFS
 PRODUCT_COPY_FILES += \
@@ -259,16 +236,16 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/libomxil-bellagio.so:system/lib/libomxil-bellagio.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libspeech_processing.so:system/lib/ste_omxcomponents/libspeech_processing.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxarmivproc.so:system/lib/ste_omxcomponents/libst_omxarmivproc.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxface_detector.so:system/lib/ste_omxcomponents/libst_omxface_detector.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxnorcos.so:system/lib/ste_omxcomponents/libst_omxnorcos.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxredeye_corrector.so:system/lib/ste_omxcomponents/libst_omxredeye_corrector.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxredeye_detector.so:system/lib/ste_omxcomponents/libst_omxredeye_detector.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxsplitter.so:system/lib/ste_omxcomponents/libst_omxsplitter.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libnmftimer.so:system/lib/libnmftimer.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    $(LOCAL_PATH)/proprietary/system/lib/ppp_sterc.so:system/lib/ppp_sterc.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libste_ens_image_tuningdatabase.so:system/lib/libste_ens_image_tuningdatabase.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libste_ens_video_common.so:system/lib/libste_ens_video_common.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libste_ext_ens_image_common.so:system/lib/libste_ext_ens_image_common.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libste_omxil-interface.so:system/lib/libste_omxil-interface.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_alsasink.so:system/lib/ste_omxcomponents/libste_alsasink.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_alsasource.so:system/lib/ste_omxcomponents/libste_alsasource.so \
+    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_audio_mixer.so:system/lib/ste_omxcomponents/libste_audio_mixer.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_audio_source_sink.so:system/lib/ste_omxcomponents/libste_audio_source_sink.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_comfort_noise.so:system/lib/ste_omxcomponents/libste_comfort_noise.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_cscall.so:system/lib/ste_omxcomponents/libste_cscall.so \
@@ -297,43 +274,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_tonegen.so:system/lib/ste_omxcomponents/libste_tonegen.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_val_src_sink.so:system/lib/ste_omxcomponents/libste_val_src_sink.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_virtual_surround.so:system/lib/ste_omxcomponents/libste_virtual_surround.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libspeech_processing.so:system/lib/ste_omxcomponents/libspeech_processing.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxarmivproc.so:system/lib/ste_omxcomponents/libst_omxarmivproc.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxface_detector.so:system/lib/ste_omxcomponents/libst_omxface_detector.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxnorcos.so:system/lib/ste_omxcomponents/libst_omxnorcos.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxredeye_corrector.so:system/lib/ste_omxcomponents/libst_omxredeye_corrector.so \
     $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxredeye_detector.so:system/lib/ste_omxcomponents/libst_omxredeye_detector.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxsplitter.so:system/lib/ste_omxcomponents/libst_omxsplitter.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_alsasink.so:system/lib/ste_omxcomponents/libste_alsasink.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_alsasource.so:system/lib/ste_omxcomponents/libste_alsasource.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_audio_source_sink.so:system/lib/ste_omxcomponents/libste_audio_source_sink.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_comfort_noise.so:system/lib/ste_omxcomponents/libste_comfort_noise.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_cscall.so:system/lib/ste_omxcomponents/libste_cscall.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_dec_amr.so:system/lib/libste_dec_amr.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_dec_amrwb.so:system/lib/libste_dec_amrwb.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_dec_h264.so:system/lib/libste_dec_h264.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_dec_jpeg.so:system/lib/libste_dec_jpeg.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_dec_mpeg2.so:system/lib/libste_dec_mpeg2.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_dec_mpeg4.so:system/lib/libste_dec_mpeg4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_dec_vc1.so:system/lib/libste_dec_vc1.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_drc.so:system/lib/libste_drc.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_enc_aac.so:system/lib/libste_enc_aac.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_enc_amr.so:system/lib/libste_enc_amr.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_enc_amrwb.so:system/lib/libste_enc_amrwb.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_enc_h264.so:system/lib/libste_enc_h264.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_enc_jpeg.so:system/lib/libste_enc_jpeg.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_enc_mpeg4.so:system/lib/libste_enc_mpeg4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_exif_mixer.so:system/lib/libste_exif_mixer.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_ext_camera.so:system/lib/libste_ext_camera.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_mdrc.so:system/lib/libste_mdrc.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_noise_reduction.so:system/lib/libste_noise_reduction.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_pcm_splitter.so:system/lib/libste_pcm_splitter.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_speech_proc.so:system/lib/libste_speech_proc.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_spl.so:system/lib/libste_spl.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_teq.so:system/lib/libste_teq.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_tonegen.so:system/lib/libste_tonegen.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_val_src_sink.so:system/lib/libste_val_src_sink.so \
-    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libste_virtual_surround.so:system/lib/libste_virtual_surround.so
+    $(LOCAL_PATH)/proprietary/system/lib/ste_omxcomponents/libst_omxsplitter.so:system/lib/ste_omxcomponents/libst_omxsplitter.so
 
 # STE Services
 PRODUCT_COPY_FILES += \
@@ -380,11 +326,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/psdata/sterc_script_connect_dun:system/etc/psdata/sterc_script_connect_dun \
     $(LOCAL_PATH)/proprietary/system/etc/psdata/sterc_script_disconnect:system/etc/psdata/sterc_script_disconnect \
     $(LOCAL_PATH)/proprietary/system/etc/psdata/sterc_script_disconnect_dun:system/etc/psdata/sterc_script_disconnect_dun
-
-# OMX
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/ppp_sterc.so:system/lib/ppp_sterc.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so
 
 # NMF Confs
 PRODUCT_COPY_FILES += \
