@@ -96,9 +96,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/samsung_s5k4ecgx_ricco.dat:system/usr/share/camera/config_file/samsung_s5k4ecgx_ricco.dat \
     $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/samsung_s5k6aafx13.dat:system/usr/share/camera/config_file/samsung_s5k6aafx13.dat \
     $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/samsung_s5k6aafx13_rev00.dat:system/usr/share/camera/config_file/samsung_s5k6aafx13_rev00.dat \
-    $(LOCAL_PATH)//system/usr/share/camera/config_file/siliconfile_sr030pc50.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50.dat \
+    $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/siliconfile_sr030pc50.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50.dat \
     $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/siliconfile_sr030pc50_codina_tmo.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50_codina_tmo.dat \
-    $(LOCAL_PATH)//system/usr/share/camera/config_file/siliconfile_sr030pc50_hendrix.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50_hendrix.dat \
+    $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/siliconfile_sr030pc50_hendrix.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50_hendrix.dat \
     $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/siliconfile_sr030pc50_kyle.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50_kyle.dat \
     $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/siliconfile_sr030pc50_skomer.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50_skomer.dat \
     $(LOCAL_PATH)/proprietary/system/usr/share/camera/config_file/sony_isx006.dat:system/usr/share/camera/config_file/sony_isx006.dat \
@@ -193,27 +193,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libstagefright_ste_mp3decode.so:system/lib/ste_omxcomponents/libstagefright_ste_mp3decode.so \
     $(LOCAL_PATH)/proprietary/system/lib/libstagefright_soft_ste_aacdec.so:system/lib/ste_omxcomponents/libstagefright_soft_ste_aacdec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libstagefright_soft_ste_mp3dec.so:system/lib/ste_omxcomponents/libstagefright_soft_ste_mp3dec.so
-
-
-# Alsa
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/default.conf:system/usr/share/alsa/pcm/default.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/dmix.conf:system/usr/share/alsa/pcm/dmix.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/dpl.conf:system/usr/share/alsa/pcm/dpl.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/dsnoop.conf:system/usr/share/alsa/pcm/dsnoop.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/front.conf:system/usr/share/alsa/pcm/front.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/iec958.conf:system/usr/share/alsa/pcm/iec958.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/modem.conf:system/usr/share/alsa/pcm/modem.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/rear.conf:system/usr/share/alsa/pcm/rear.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/side.conf:system/usr/share/alsa/pcm/side.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/surround40.conf:system/usr/share/alsa/pcm/surround40.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/surround41.conf:system/usr/share/alsa/pcm/surround41.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
-    $(LOCAL_PATH)/proprietary/system/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
 
 # LVVEFS
 PRODUCT_COPY_FILES += \
