@@ -105,7 +105,11 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/lib/hw/gps.default.so:system/lib/hw/gps.default.so
+    $(LOCAL_PATH)/system/bin/gps.cer:system/bin/gps.cer \
+    $(LOCAL_PATH)/system/bin/gpsd:system/bin/gpsd \
+    $(LOCAL_PATH)/system/etc/AGPS_CA.pem:system/etc/AGPS_CA.pem \
+    $(LOCAL_PATH)/system/etc/gps.xml:system/etc/gps.xml \
+    $(LOCAL_PATH)/system/lib/hw/gps.montblanc.so:system/lib/hw/gps.montblanc.so
 
 # DRM
 PRODUCT_COPY_FILES += \
